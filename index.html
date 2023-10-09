@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>
+         Batalha de Cartas
+    </title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+
+<body>
+    
+    <div class="container">
+       
+            
+        <h1 class="page-title">Batalha de Cartas</h1>
+        <button id="btnIniciar"  onclick="sortearNumeroJogador()">Iniciar</button>
+        <button id="btnCartaMaquina" onclick="sortearNumeroMaquina()">Atacar</button>
+        <button id="btnNovaJogada"  onclick="novaJogada()">Nova Jogada</button>
+        
+       
+            <!--<h2>Escolha o seu atributo</h2> -->
+            <div id="placar"></div>
+            
+            <!--<div id="quantidade-cartas"></div> -->
+            <div class="wrapper">
+                
+            
+            <div id="cartas">    
+
+            </div>
+            <div>
+                <div id="mensagemCartaJogador" style="margin-left: -750px;"></div>
+                <div id="carta-jogador-selecionada" class="carta" style=" margin-right: 800px; margin-top:-60 ;">
+                    <img src="assets/imgs/Cards/fundo-carta.jpg" id="sexta-imagem-carta-selecionada" 
+                        style="width: inherit; height: auto; position: absolute;" ></div>
+                        
+            </div>
+
+            
+            <button id="btnJogarNovamente"  style="width: inherit; height: auto; position: absolute; top: 250px;
+            left: 890px; display: none; " onclick="reiniciarJogo()">Jogar Novamente</button>
+            
+            
+            <div>
+                <div id="mensagemCartaMaquina" style="margin-left: -150px;"></div>
+                <div id="carta-maquina" class="carta" style=" margin-right: 200px; margin-top:-60 ;">
+                    <img src="assets/imgs/Cards/fundo-carta.jpg" id="outra-carta-jogador-sorteada"
+                        style="width: inherit; height: auto; position: absolute;"></div>
+                        
+            </div>
+        </div>
+
+                <div>
+                    
+                    <div id="carta-jogador" class="carta" style=" margin-left: 450px; margin-top:-250px ;">
+                           <img src="assets/imgs/Cards/fundo-carta.jpg" id = "carta-jogador-sorteada1" class="carta-jogador"
+                            style=" width: inherit; height: auto; position: absolute;  visibility: hidden;"  onclick="atualizarImagem('carta-jogador-sorteada1')">
+
+                    </div>
+
+                    <div id="carta-jogador" class="carta" style=" margin-left: 650px; margin-top:-500px ;">
+                        <img src="assets/imgs/Cards/fundo-carta.jpg" id = "carta-jogador-sorteada2" class="carta-jogador"
+                         style=" width: inherit; height: auto; position: absolute;  visibility: hidden;" onclick="atualizarImagem('carta-jogador-sorteada2')">
+                    </div>
+
+                    <div id="carta-jogador" class="carta" style=" margin-left: 850px; margin-top:-500px ;">
+                            <img src="assets/imgs/Cards/fundo-carta.jpg" id = "carta-jogador-sorteada3" class="carta-jogador"
+                             style=" width: inherit; height: auto; position: absolute;  visibility: hidden;" onclick="atualizarImagem('carta-jogador-sorteada3')">     
+                    </div>
+
+                    <div id="carta-jogador" class="carta" style=" margin-left: 1050px; margin-top:-500px ;">
+                        <img src="assets/imgs/Cards/fundo-carta.jpg" id = "carta-jogador-sorteada4" class="carta-jogador"
+                         style=" width: inherit; height: auto; position: absolute;  visibility: hidden;" onclick="atualizarImagem('carta-jogador-sorteada4')">     
+                    </div>
+
+                    
+
+                    <div id="carta-jogador" class="carta" style=" margin-left: 1250px; margin-top:-500px ;">
+                        <img src="assets/imgs/Cards/fundo-carta.jpg" id = "carta-jogador-sorteada5" class="carta-jogador"
+                         style=" width: inherit; height: auto; position: absolute;  visibility: hidden;"  onclick="atualizarImagem('carta-jogador-sorteada5')">     
+                    </div>
+                    
+                </div>
+
+                
+
+
+
+            
+
+            
+        </div>    
+
+        
+            
+            
+        </form>
+    </div>
+</body>
+
+</html>
+

@@ -1,0 +1,223 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    min-height: 854px;
+    /*background-image: url('assets/imgs/fundos/fundo-background6.jpg');*/
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 20vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+/*button, .button-jogar {
+    padding: .8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}*/
+
+
+button, .button-jogar  {
+    width: 10rem;
+    max-width: 10rem;
+    padding: .8rem 1.5rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.button-success {
+    background-color: #28a745; /* Cor verde do Bootstrap */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.button-success:hover {
+    background-color: #218838; /* Cor de fundo mais escura ao passar o cursor */
+}
+
+  .button-danger {
+    background-color: #dc3545; /* Cor vermelha do Bootstrap */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button-danger:hover {
+    background-color: #c82333; /* Cor de fundo mais escura quando hover */
+}
+
+/* Estilo do botão Warning */
+.warning-button {
+    background-color: #ffc107; /* Cor de fundo amarela */
+    color: #212529; /* Cor do texto escura */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remova a borda */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Mostrar o cursor como um ponteiro */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Estilizar o botão Warning quando o cursor estiver sobre ele */
+.warning-button:hover {
+    background-color: #ffca28; /* Cor de fundo mais clara quando hover */
+}
+
+
+h2 {
+    color: white;
+}
+
+#carta-jogador {
+    width: 150px;
+    height: 500px;
+    overflow: auto;
+    /*border-radius: 10px;*/
+    margin-bottom: 1px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    /*background-size: 350px 300px;*/
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 5px;
+    border-radius: 11px;
+}
+
+#carta-jogador:hover {
+    width: 290px;
+    height: 500px;
+    overflow: auto;
+    margin-bottom: 1px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: sticky;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 5px;
+    border-radius: 11px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+#carta-maquina, #carta-jogador-selecionada {
+    width: 300px;
+    height: 500px;
+    overflow: auto;
+    /*border-radius: 10px;*/
+    margin-bottom: 1px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    /*position: relative;*/
+    /*background-size: 350px 300px;*/
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 5px;
+    
+}
+
+
+
+
+.carta-status {
+    height: 160px;
+    margin: 2rem;
+    color: white;
+    z-index: 2;
+}
+
+.carta-status input {
+    margin: 20px 10px;
+}
+
+.carta-status p {
+    margin-bottom: 2rem;
+}
+
+
+
+
+.--spacing {
+    margin-left: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    /*width: 100%;*/
+}
+
+.carta-subtitle {
+    z-index: 2;
+    position: absolute;
+    top: 16px;
+    left: 37px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#cartas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.carta-status p {
+    margin-bottom: 2rem;
+}*/
+
+#placar, #mensagemCartaJogador, #mensagemCartaMaquina {
+    color: white;
+    font-size: 1.5em;
+}
+
+#cartas-escolher{
+    margin-top: 30px;
+    margin-left: 1px;
+    padding-right: 50px;
+}
+
+/*Fazer imagem tremer:*/
+.shaking-image {
+    animation: shake 0.1s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px) rotate(0.5deg); }
+    50% { transform: translateX(5px) rotate(-0.5deg); }
+    75% { transform: translateX(-5px) rotate(0.5deg); }
+    100% { transform: translateX(5px) rotate(-0.5deg); }
+}
+
+
